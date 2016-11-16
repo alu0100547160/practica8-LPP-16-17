@@ -18,7 +18,7 @@ class Lse
     
     #inserta un nodo al final de la lista
     def insert(value)
-        if @Max <= TAM_MAX_LIST
+        if @Max <= 15
             if @actual.nil?
                 @actual = value
                 @fin = value

@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'dieta/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "dieta"
-  spec.version       = Dieta::VERSION
+  spec.name          = "Lista_comidas"
+  spec.version       = Lista_comidas::VERSION
   spec.authors       = ["lisscheese"]
   spec.email         = ["lcvd123@gmail.com"]
 
   spec.summary       = %q{p8.}
-  spec.description   = %q{practicxa6}
+  spec.description   = %q{practica donde se practica la herencia de clases }
   spec.homepage      = "https://c9.io/lisscheese"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

@@ -1,7 +1,10 @@
-require "spec_helper"
+#require "spec_helper"
+require '/home/ubuntu/workspace/dieta/lib/dieta/dieta.rb'
+require '/home/ubuntu/workspace/dieta/lib/dieta/listas_menu.rb'
+require '/home/ubuntu/workspace/dieta/lib/dieta/lista.rb'
 
 
-describe Datos do
+describe Dieta do
   #DATOS
   @Descripciones= ['Mandarina','Tostadas con mermelada']
   @Racion=['1 unidad', '2 unidades']
@@ -31,17 +34,11 @@ describe Datos do
 end
 
 
-describe Lista do
+describe Lse do
   
   context "Prueba de las partes fundamentales de la clase lista:" do
      
-          it "Existe una numero de versión" do
-            expect(Pract06::VERSION).not_to be nil
-          end
-           
-          it "Debe exitir una constate que indique el numero maximo de elementos que puede tener la lista" do
-            expect(TAM_MAX_LIST).not_to be nil
-          end
+        
           
           it "Debe existir la clase lista: LSE" do
             expect { Lse.new }.not_to raise_error
@@ -182,9 +179,7 @@ end
 describe Lista_comidas do
   # <top (required)>': uninitialized constant Menu_alimentos (NameError)
   context "Pruebas para la clase Menu_alimentos y Edad, herencia de Dieta" do
-    it "Existe una numero de versión" do
-            expect(Pract08::VERSION).not_to be nil
-    end
+    
     
     it "->Tipo de instancia de un objeto que pertenece a la clase y Herencia de la clase Dieta." do
         expect{Menu_alimentos.new(nil)}.not_to raise_error
