@@ -18,7 +18,7 @@ end
 
 
 ##### CLASE DE GRUPO BASADA EN EDAD
-=begin class Edad < Dieta
+class Edad < Dieta
      attr_reader :edad
     def initialize(edad)
         super(0,0,0,0,0,0,0)
@@ -32,4 +32,3 @@ end
         super(dieta.tipo_dieta, dieta.ingesta, dieta.descripcion, dieta.racion, dieta.cantidad, dieta.kcal, dieta.percent)
     end
 end
-=end
