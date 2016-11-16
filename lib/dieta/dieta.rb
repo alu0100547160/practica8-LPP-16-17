@@ -1,3 +1,4 @@
+
 class Dieta
     attr_accessor :tipo_dieta, :ingesta, :descripcion, :racion, :cantidad, :kcal, :percent
     def initialize(tipo_dieta, ingesta, descripcion, racion, cantidad, kcal, percent)
