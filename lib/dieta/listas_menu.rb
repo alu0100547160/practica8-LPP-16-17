@@ -1,4 +1,4 @@
-=begin class Menu_alimentos < Dieta
+class Menu_alimentos < Dieta
     attr_reader :Tipo,:Lista_comidas
     def initialize(t)
         super(0,0,0,0,0,0,0)
@@ -15,7 +15,7 @@
         super(dieta.tipo_dieta, dieta.ingesta, dieta.descripcion, dieta.racion, dieta.cantidad, dieta.kcal, dieta.percent)
     end
 end
-=end
+
 
 ##### CLASE DE GRUPO BASADA EN EDAD
 class Edad < Dieta
